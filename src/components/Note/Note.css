@@ -1,0 +1,11 @@
+h1{
+    font-size: 24px;
+}
+textarea{
+
+    font-size: 14px;
+    width: 95%;
+    height: 75%;
+    border: none;
+    overflow: auto;
+}

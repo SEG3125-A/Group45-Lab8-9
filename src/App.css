@@ -1,0 +1,22 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 100%;
+  margin: 10px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 40px;
+}

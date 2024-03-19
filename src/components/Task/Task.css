@@ -1,0 +1,7 @@
+label{
+    font-size: 14px;
+    margin:5px;
+}
+.checked {
+    text-decoration: line-through;
+  }

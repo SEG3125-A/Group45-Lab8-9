@@ -1,0 +1,38 @@
+select {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.study-session-labels{
+    background-color: lightsalmon;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.task{
+    margin-bottom: 5%;
+
+}
+.timer{
+    font-size: 40px;
+}
+
+.countdown{
+    font-size: 40px;
+}
+
+button{
+    margin: 10px;
+    background-color: orange;  
+    width: 90%;
+    border-radius: 10px;
+    font-size: 24px;
+    border: none;
+    margin: 10px;
+    height: 30px
+}
+
