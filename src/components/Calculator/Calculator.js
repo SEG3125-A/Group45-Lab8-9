@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Calculator.css';
 
-const Calculator = () => {
+const Calculator = ({title}) => {
   const [result, setResult] = useState('');
 
   const appendToResult = (value) => {
@@ -18,7 +18,7 @@ const Calculator = () => {
 
   return (
     <div className='card'>
-      <h1>Calculator</h1>
+      <h1>{title}</h1>
       <div className="calculator">
         <input type="text" value={result} readOnly />
         <button onClick={clearResult} className="clear">C</button>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Task.css";
 
-const Task = ({ title, content }) => {
+const Task = ({ title, content, lang }) => {
   const [newTaskInput, setNewTaskInput] = useState('');
   const [tasks, setTasks] = useState([]);
 
@@ -22,7 +22,7 @@ const Task = ({ title, content }) => {
 
   return (
     <div className="card">
-      <h2>{title}</h2>
+      <h2>{lang === 'English' ? 'Tasks' : 'Tâches'}</h2>
       <div>
         {tasks.map((task, index) => (
           <div key={index}>
@@ -37,8 +37,8 @@ const Task = ({ title, content }) => {
         ))}
       </div>
       
-      <input type="text" placeholder="New Task" value={newTaskInput} onChange={inputChange}/>
-      <button id="addTaskBtn" onClick={newTask}>Add Task</button>
+      <input type="text" placeholder={lang === 'English' ? 'New Task' : 'Nouvelle Tâche'} value={newTaskInput} onChange={inputChange}/>
+      <button id="addTaskBtn" onClick={newTask}>{lang === 'English' ? 'Add Task' : 'Ajouter Tâche'}</button>
     </div>
   );
 };

@@ -1,0 +1,56 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: white;
+    margin: 10px;
+  }
+
+  .day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .day:hover {
+    background-color: #e0e0e0;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .cross-out {
+    text-decoration: line-through;
+    color: red;
+  }
+
+  .cross-out:hover::after {
+    content: "Click to uncross";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }

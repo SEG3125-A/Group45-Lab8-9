@@ -20,3 +20,19 @@
 .title{
   font-size: 40px;
 }
+
+.App {
+  position: relative; /* Make the parent container relative */
+}
+
+.select-container {
+  position: absolute; /* Position the select element absolutely */
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+}
+
+/* Additional styles for the select element */
+.select-container select {
+  padding: 5px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust font size */
+}
